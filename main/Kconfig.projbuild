@@ -1,0 +1,57 @@
+menu "Application Configuration"
+
+	choice WIFI_CONNECT
+		bool "Select the Wifi connection method"
+		default WIFI_CONNECT_APSTA
+		help
+			Select Wifi connection.
+		config WIFI_CONNECT_AP_PLUS_STA
+			bool "Connect to Wifi using AP mode and STA mode at the same time"
+		config WIFI_CONNECT_APSTA
+			bool "Connect to Wifi using APSTA mode"
+	endchoice
+
+	config AP_WIFI_SSID
+		string "WiFi SSID of AP mode"
+		default "ap-ssid"
+		help
+			SSID (network name) for the example to connect to.
+
+	config AP_WIFI_PASSWORD
+		string "WiFi Password of AP mode"
+		default "ap-password"
+		help
+			WiFi password (WPA or WPA2) for the example to use.
+
+	config AP_WIFI_CHANNEL
+		int "WiFi Channel of AP mode"
+		range 1 13
+		default 1
+		help
+			WiFi channel (network channel) for the example to use.
+
+	config AP_MAX_STA_CONN
+		int "Maximal STA connections of AP mode"
+		default 4
+		help
+			Max number of the STA connects to AP.
+
+	config STA_WIFI_SSID
+		string "WiFi SSID of STA mode"
+		default "sta-ssid"
+		help
+			SSID (network name) for the example to connect to.
+
+	config STA_WIFI_PASSWORD
+		string "WiFi Password of STA mode"
+		default "sta-password"
+		help
+			WiFi password (WPA or WPA2) for the example to use.
+
+	config STA_CONNECT_TIMEOUT
+		int "Connect timeout of STA mode"
+		default 5
+		help
+			Set the connection timeout to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+endmenu
