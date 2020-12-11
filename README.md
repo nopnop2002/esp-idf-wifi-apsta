@@ -28,7 +28,7 @@ git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
 cd esp-idf-wifi-apsta
 idf.py set-target esp32
 idf.py menuconfig
-idf.py  flash monitor
+idf.py flash monitor
 ```
 
 # Install for ESP32-S2
@@ -37,7 +37,7 @@ git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
 cd esp-idf-wifi-apsta
 idf.py set-target esp32s2
 idf.py menuconfig
-idf.py  flash monitor
+idf.py flash monitor
 ```
 
 - WIFI_CONNECT   
