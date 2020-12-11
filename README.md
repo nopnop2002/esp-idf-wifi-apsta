@@ -6,10 +6,14 @@ esp-idf contains examples in station mode (WIFI_MODE_STA) and softap mode (WIFI_
 I referred [here](https://esp32.com/viewtopic.php?t=10619).
 
 The ESP32 chip has the following four MAC addresses:   
-- MAC for STA mode
-- MAC for AP mode
+- MAC for WiFi STA mode
+- MAC for WiFi AP mode
 - MAC for Bluetooth
 - Mac for Ethernet
+
+The ESP32-S2 chip has the following two MAC addresses:   
+- MAC for WiFi STA mode
+- MAC for WiFi AP mode
 
 Since it has a STA mode MAC and an AP mode MAC separately, STA mode and AP mode work at the same time.   
 The result is the same whether you configure AP mode and STA mode individually or configure them all at once in APSTA mode.   
@@ -18,12 +22,22 @@ The result is the same whether you configure AP mode and STA mode individually o
 esp-idf ver4.1 or later.   
 
 
-# Install
+# Install for ESP32
 ```
 git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
 cd esp-idf-wifi-apsta
-make menuconfig
-make flash monitor
+idf.py set-target esp32
+idf.py menuconfig
+idf.py  flash monitor
+```
+
+# Install for ESP32-S2
+```
+git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
+cd esp-idf-wifi-apsta
+idf.py set-target esp32s2
+idf.py menuconfig
+idf.py  flash monitor
 ```
 
 - WIFI_CONNECT   
