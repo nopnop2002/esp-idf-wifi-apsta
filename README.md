@@ -26,24 +26,24 @@ make menuconfig
 make flash monitor
 ```
 
-- WIFI_CONNECT
+- WIFI_CONNECT   
  Select the Wifi connection method from the following:   
- Connect to Wifi using AP mode and STA mode at the same time.
- Connect to Wifi using APSTA mode.
-- AP_WIFI_SSID
- WiFi SSID of AP mode
-- AP_WIFI_PASSWORD
- WiFi Password of AP mode
-- AP_WIFI_CHANNEL
- WiFi Channel of AP mode
-- AP_MAX_STA_CONN
- Max number of the STA connects to AP
-- STA_WIFI_SSID
- WiFi SSID of STA mode
-- STA_WIFI_PASSWORD
- WiFi Password of STA mode
-- STA_CONNECT_TIMEOUT
- Connect timeout of STA mode
+ Connect to Wifi using AP mode and STA mode at the same time.   
+ Connect to Wifi using APSTA mode.   
+- AP_WIFI_SSID   
+ WiFi SSID of AP mode   
+- AP_WIFI_PASSWORD   
+ WiFi Password of AP mode   
+- AP_WIFI_CHANNEL   
+ WiFi Channel of AP mode   
+- AP_MAX_STA_CONN   
+ Max number of the STA connects to AP   
+- STA_WIFI_SSID   
+ WiFi SSID of STA mode   
+- STA_WIFI_PASSWORD   
+ WiFi Password of STA mode   
+- STA_CONNECT_TIMEOUT   
+ Connect timeout of STA mode   
 
 ![config-main](https://user-images.githubusercontent.com/6020549/101855573-0090d100-3ba7-11eb-923f-b48a4c937085.jpg)
 
