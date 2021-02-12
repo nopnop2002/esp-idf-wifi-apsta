@@ -63,7 +63,7 @@ idf.py flash monitor
 ![config-main](https://user-images.githubusercontent.com/6020549/101855573-0090d100-3ba7-11eb-923f-b48a4c937085.jpg)
 
 ## AP Mode   
-[config-ap](https://user-images.githubusercontent.com/6020549/107764961-600c8800-6d74-11eb-8353-9293c5927dcc.jpg)
+![config-ap](https://user-images.githubusercontent.com/6020549/107764961-600c8800-6d74-11eb-8353-9293c5927dcc.jpg)
 
 ## STA Mode   
 ![config-sta](https://user-images.githubusercontent.com/6020549/107764963-613db500-6d74-11eb-80c5-d8de7d933b7d.jpg)
