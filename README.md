@@ -42,7 +42,8 @@ idf.py flash monitor
 
 - WIFI_CONNECT   
  Select the Wifi connection method from the following:   
- Connect to Wifi using AP mode and STA mode at the same time.   
+ Connect to Wifi using AP mode.
+ Connect to Wifi using STA mode.   
  Connect to Wifi using APSTA mode.   
 - AP_WIFI_SSID   
  WiFi SSID of AP mode   
@@ -61,7 +62,12 @@ idf.py flash monitor
 
 ![config-main](https://user-images.githubusercontent.com/6020549/101855573-0090d100-3ba7-11eb-923f-b48a4c937085.jpg)
 
-![config-app-1](https://user-images.githubusercontent.com/6020549/101855693-32a23300-3ba7-11eb-9f99-cbb41338827b.jpg)
+- AP Mode   
+![config-ap](https://user-images.githubusercontent.com/6020549/107764961-600c8800-6d74-11eb-8353-9293c5927dcc.jpg)
 
-![config-app-2](https://user-images.githubusercontent.com/6020549/101855700-35048d00-3ba7-11eb-9c18-d47be105632b.jpg)
+- STA Mode   
+![config-sta](https://user-images.githubusercontent.com/6020549/107764963-613db500-6d74-11eb-80c5-d8de7d933b7d.jpg)
+
+- APSTA Mode   
+![config-apsta](https://user-images.githubusercontent.com/6020549/107764962-613db500-6d74-11eb-9ab4-09c3dcce00bd.jpg)
 

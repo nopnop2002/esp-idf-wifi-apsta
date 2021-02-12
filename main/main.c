@@ -58,7 +58,7 @@ static void initialise_wifi(void)
 	initialized = true;
 }
 
-#if CONFIG_WIFI_CONNECT_AP_PLUS_STA
+#if CONFIG_WIFI_CONNECT_AP
 static bool wifi_ap(void)
 {
 	wifi_config_t wifi_config = { 0 };
@@ -81,7 +81,10 @@ static bool wifi_ap(void)
 			 CONFIG_AP_WIFI_SSID, CONFIG_AP_WIFI_PASSWORD, CONFIG_AP_WIFI_CHANNEL);
 	return ESP_OK;
 }
+#endif
 
+
+#if CONFIG_WIFI_CONNECT_STA
 static bool wifi_sta(int timeout_ms)
 {
 	wifi_config_t wifi_config = { 0 };
@@ -159,15 +162,14 @@ void app_main()
 
 	initialise_wifi();
 
-#if CONFIG_WIFI_CONNECT_AP_PLUS_STA
-	ESP_LOGW(TAG, "Start wifi_ap");
+#if CONFIG_WIFI_CONNECT_AP
+	ESP_LOGW(TAG, "Start AP Mode");
 	wifi_ap();
-	ESP_LOGW(TAG, "Start wifi_sta");
+#elif CONFIG_WIFI_CONNECT_STA
+	ESP_LOGW(TAG, "Start STA Mode");
 	wifi_sta(CONFIG_STA_CONNECT_TIMEOUT*1000);
-#endif
-
-#if CONFIG_WIFI_CONNECT_APSTA
-	ESP_LOGW(TAG, "Start wifi_apsta");
+#elif CONFIG_WIFI_CONNECT_APSTA
+	ESP_LOGW(TAG, "Start APSTA Mode");
 	wifi_apsta(CONFIG_STA_CONNECT_TIMEOUT*1000);
 #endif
 }
