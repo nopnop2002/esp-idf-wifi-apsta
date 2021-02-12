@@ -15,8 +15,7 @@ The ESP32-S2 chip has the following two MAC addresses:
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 
-Since it has a STA mode MAC and an AP mode MAC separately, STA mode and AP mode work at the same time.   
-The result is the same whether you configure AP mode and STA mode individually or configure them all at once in APSTA mode.   
+Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as both AP and STATION.
 
 # Software requirements
 esp-idf ver4.1 or later.   
