@@ -15,26 +15,21 @@ The ESP32-S2 chip has the following two MAC addresses:
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 
+The ESP32-C2 chip has the following three MAC addresses:   
+- MAC for WiFi STA mode
+- MAC for WiFi AP mode
+- MAC for Bluetooth
+
 Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as both AP and STATION.
 
 # Software requirements
 esp-idf ver4.1 or later.   
 
-
-# Install for ESP32
+# Installation
 ```
 git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
 cd esp-idf-wifi-apsta
-idf.py set-target esp32
-idf.py menuconfig
-idf.py flash monitor
-```
-
-# Install for ESP32-S2
-```
-git clone https://github.com/nopnop2002/esp-idf-wifi-apsta
-cd esp-idf-wifi-apsta
-idf.py set-target esp32s2
+idf.py set-target {esp32/esp32s2/esp32c3}
 idf.py menuconfig
 idf.py flash monitor
 ```
