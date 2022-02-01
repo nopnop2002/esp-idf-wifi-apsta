@@ -15,7 +15,7 @@ The ESP32-S2 chip has the following two MAC addresses:
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 
-The ESP32-C2 chip has the following three MAC addresses:   
+The ESP32-C3 chip has the following three MAC addresses:   
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 - MAC for Bluetooth
