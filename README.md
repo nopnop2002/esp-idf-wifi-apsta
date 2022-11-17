@@ -28,7 +28,7 @@ The ESP32-C3 chip has the following three MAC addresses:
 Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as both AP and STATION.
 
 # Software requirements
-esp-idf ver4.4 or later.   
+esp-idf v4.4/v5.0.   
 This is because this version supports ESP32-C3.   
 
 # Installation
