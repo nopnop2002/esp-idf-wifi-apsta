@@ -5,25 +5,16 @@ esp-idf contains examples in station mode (WIFI_MODE_STA) and softap mode (WIFI_
 
 I referred [here](https://esp32.com/viewtopic.php?t=10619).
 
-The ESP32 chip has the following four MAC addresses:   
+The ESP32/ESP32S3/ESP32C2/ESP32C3 chip has the following four MAC addresses:   
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 - MAC for Bluetooth Classic
 - Mac for Ethernet
 
-The ESP32-S2 chip has the following two MAC addresses:   
+The ESP32-S2 chip has the following three MAC addresses:   
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
-
-The ESP32-S3 chip has the following three MAC addresses:   
-- MAC for WiFi STA mode
-- MAC for WiFi AP mode
-- MAC for Bluetooth LE
-
-The ESP32-C3 chip has the following three MAC addresses:   
-- MAC for WiFi STA mode
-- MAC for WiFi AP mode
-- MAC for Bluetooth LE
+- Mac for Ethernet
 
 Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as both AP and STATION.
 
