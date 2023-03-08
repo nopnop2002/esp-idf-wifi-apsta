@@ -1,5 +1,5 @@
 # esp-idf-wifi-apsta
-Example to WIFI_MODE_APSTA with esp-idf.
+WIFI_MODE_APSTA example with esp-idf.   
 
 esp-idf contains examples in station mode (WIFI_MODE_STA) and softap mode (WIFI_MODE_AP), but there are no examples in apsta mode (WIFI_MODE_APSTA).
 
