@@ -20,7 +20,7 @@ Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as bot
 
 # Software requirements
 ESP-IDF V4.4/V5.0.   
-ESP-IDF V5 is required when using ESP32-C2.   
+ESP-IDF V5.0 is required when using ESP32-C2.   
 
 # Installation
 ```
