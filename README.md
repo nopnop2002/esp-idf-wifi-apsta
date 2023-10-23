@@ -5,7 +5,7 @@ esp-idf contains examples in station mode (WIFI_MODE_STA) and softap mode (WIFI_
 
 I referred [here](https://esp32.com/viewtopic.php?t=10619).
 
-The ESP32/ESP32S3/ESP32C2/ESP32C3 chip has the following four MAC addresses:   
+The ESP32/ESP32S3/ESP32C2/ESP32C3/ESP32C6 chip has the following four MAC addresses:   
 - MAC for WiFi STA mode
 - MAC for WiFi AP mode
 - MAC for Bluetooth Classic
@@ -19,8 +19,9 @@ The ESP32-S2 chip has the following three MAC addresses:
 Since there are separate STA mode MACs and AP mode MACs, APSTA mode works as both AP and STATION.
 
 # Software requirements
-ESP-IDF V4.4/V5.0.   
+ESP-IDF V4.4/V5.x.   
 ESP-IDF V5.0 is required when using ESP32-C2.   
+ESP-IDF V5.1 is required when using ESP32-C6.   
 
 # Installation
 ```
