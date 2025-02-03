@@ -3,7 +3,7 @@ WIFI_MODE_APSTA example with esp-idf.
 
 __From ESP-IDF V5.2, official sample code for WIFI_MODE_APSTA has been added.__   
 __So this repository will be changed to an archive.__   
-
+__Please use official samples from now on.__   
 
 esp-idf contains examples in station mode (WIFI_MODE_STA) and softap mode (WIFI_MODE_AP), but there are no examples in apsta mode (WIFI_MODE_APSTA).
 
